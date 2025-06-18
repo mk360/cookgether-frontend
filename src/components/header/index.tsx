@@ -20,8 +20,8 @@ function Header() {
             </nav>
             <div className="flex items-center justify-around gap-4">
                 <Link className={FONT_PRESETS.montserrat_bold} href="/recettes/nouvelle">Publier une recette</Link>
-                <Link className={`${FONT_PRESETS.montserrat_bold} sushi bg-primary p-2 rounded-lg`} href="/recettes/nouvelle">
-                    <span className="text-cg-white">Connexion</span>
+                <Link className={`${FONT_PRESETS.montserrat_bold} sushi bg-primary p-2 rounded-lg transform skew-x-15 shadow-[-4px_4px_0_0px_rgba(0,0,0,0.25)] cursor-pointer`} href="/recettes/nouvelle">
+                    <span className="text-cg-white block transform -skew-x-15">Connexion</span>
                 </Link>
             </div>
         </div>

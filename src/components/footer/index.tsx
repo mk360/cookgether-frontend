@@ -5,6 +5,9 @@ function Footer() {
     return <footer className="grid grid-cols-[2fr_1fr_1fr_1fr] mt-4 bg-cg-white p-4">
         <div>
             <Link href="/"><span className={`${FONT_PRESETS.montserrat_standard} text-2xl text-orange-1`}>Cookgether</span></Link>
+            <svg width={24} height={24} className="text-cg-white fill-current">
+                <use xlinkHref="/sprite.svg#search" />
+            </svg>
         </div>
         <div>
             <h5 className={`${FONT_PRESETS.montserrat_standard} text-primary`}>Legal</h5>
