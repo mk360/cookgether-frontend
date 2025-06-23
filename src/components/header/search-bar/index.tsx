@@ -12,16 +12,20 @@ function SearchBar() {
                 <div style={{ flex: 1 }} className="flex h-full">
                     <input style={{ flex: 1 }} className={`placeholder-primary placeholder-opacity-25 px-4 border-2 rounded-lg rounded-tr-none rounded-br-none bg-grey w-auto h-full ${FONT_PRESETS.montserrat_standard}`} placeholder="Rechercher une recette..." />
                     <button className="sushi cursor-pointer p-1 border-2 border-primary bg-primary text-cg-white rounded-lg rounded-tl-none rounded-bl-none">
-                        <svg className="fill-cg-white" width={24} height={24} viewBox="0 0 1 1">
-                            <use href="/sprite-2.svg#search" />
+                        <svg className="fill-cg-white" width={24} height={24} viewBox="0 0 24 24">
+                            <use href="/sprite.svg#search" />
                         </svg>
                     </button>
                 </div>
                 <button className="skew-x-15 shadow-[-4px_4px_0_0px_rgba(0,0,0,0.25)] cursor-pointer bg-grey p-2 rounded-lg border-primary border-1">
-                    <span className="block -skew-x-15">Test</span>
+                    <svg className="-skew-x-15" width={24} height={24} viewBox="0 0 24 24">
+                            <use href="/sprite.svg#filters" />
+                    </svg>
                 </button>
                 <button className="skew-x-15 shadow-[-4px_4px_0_0px_rgba(0,0,0,0.25)] cursor-pointer bg-grey p-2 rounded-lg border-primary border-1">
-                    <span className="block -skew-x-15">Test</span>
+                    <svg className="-skew-x-15" width={24} height={24} viewBox="0 0 24 24">
+                            <use href="/sprite.svg#sort" />
+                    </svg>
                 </button>
             </div>
             <div></div>
@@ -31,8 +35,8 @@ function SearchBar() {
                     const newState = tags.filter((curTag) => curTag !== tag);
                     setTags(newState);
                 }} key={tag}>
-                    <div className="transform flex gap-1 -skew-x-15">
-                         <svg className="fill-cg-white" width={24} height={24} viewBox="0 0 1 1">
+                    <div className="transform flex gap-1 px-2 -skew-x-15">
+                         <svg className="fill-cg-white" width={24} height={24} viewBox="0 -0.20 1 1">
                             <use href="/sprite.svg#cross" />
                         </svg>
                         {tag}

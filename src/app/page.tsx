@@ -8,14 +8,18 @@ export default function Home() {
       <section className='h-100 flex items-center'>
         <div style={{ flex: 1 }}>
         <h1 className={`${FONT_PRESETS.agbalumo} text-8xl text-primary my-8 drop-shadow-[0_-4px_0px_#F1F1F1]`}>Bienvenue sur Cookgether</h1>
-        <div className={`shadow-[-8px_6px_0px_-3px_#C8CFBB] text-2xl w-full text-primary block text-primary/50 px-4 pr-8 border-2 rounded-lg bg-cg-white ${FONT_PRESETS.montserrat_standard}`}>
-          Découvrez des recettes délicieuses, et partagez vos propres créations culinaires
-        </div>
       </div>
       <div style={{ flex: 2 }}>
         
       </div>
       </section>
+      <div className='flex'>
+        <div style={{ flex: 1 }} className={`my-4 shadow-[-8px_6px_0px_-3px_#C8CFBB] text-2xl w-full text-primary block text-primary/50 px-4 pr-8 border-2 rounded-lg bg-cg-white ${FONT_PRESETS.montserrat_standard}`}>
+          Découvrez des recettes délicieuses, et partagez vos propres créations culinaires
+        </div>
+        <div style={{ flex: 1 }}>
+        </div>
+      </div>
       <section className='mb-4'>
         <figure>
           <img alt='' src="/placeholder.png" className='w-full h-xl mb-4' />
@@ -39,7 +43,7 @@ export default function Home() {
         <RecipeCard name="Test recette" date="7 Octobre 2023" category='Levantin' />
       </section>
       <center><Link href="/create">
-        <h3 className={`${FONT_PRESETS.agbalumo} text-primary my-4 text-6xl drop-shadow-[0_-4px_0px_#F1F1F1]`}>Share your Recipe now!</h3>
+        <h3 className={`${FONT_PRESETS.agbalumo} text-primary my-4 text-6xl drop-shadow-[0_-4px_0px_#F1F1F1]`}>Partagez vos recettes maintenant !</h3>
       </Link></center>
     </main>
   )
