@@ -15,9 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html style={{ minHeight: "100vh" }} lang="en">
-      <body style={{ height: "100%", backgroundImage: "url(/bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className={`px-8 py-4`}>
+      <body style={{ height: "100%", backgroundImage: "url(/bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className={`px-4 py-4`}>
         <Header />
-        {children}
+        <main className='p-2 border-1 border-primary rounded-lg bg-beige-1'>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

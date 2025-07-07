@@ -20,6 +20,7 @@
   --color-beige-2: #F8D4A5;
   --color-green-1: #C8CFBB;
   --color-green-2: #638D7A;
+  --color-link: #5A39EB;
   /* --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1); */
 }
@@ -28,6 +29,10 @@
   background-image: url(/waves.png);
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,7 +71,7 @@ body {
 }
 
 body {
-  color: rgb(var(--color-primary));
+  color: #1D252A;
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
