@@ -18,11 +18,26 @@ async function Recherche({ params }: { params: {recipe: string } }) {
                 </div>
             </div>
             <div />
-            <hr className="border-0.5 border-primary" />
-            <ResultCard />
             <div>
-                <h2 className={FONT_PRESETS.montserrat_bold}>Vous ne trouvez pas ce que vous recherchez ?</h2>
-                <div><SushiButton content="Créez votre recette gratuitement" className="mx-auto" sushi type="link" theme="black" href="/nouvelle" /></div>
+                <hr className="border-0.5 border-primary" />
+                <ResultCard />
+            </div>
+            <div>
+                <hr className="border-0.5 border-primary" />
+                <ResultCard />
+            </div>
+            <div>
+                <hr className="border-0.5 border-primary" />
+            </div>
+            <div className="flex flex-col justify-center">
+                <h2 className={`${FONT_PRESETS.montserrat_bold} text-3xl my-4 mx-auto`}>Vous ne trouvez pas ce que vous recherchez ?</h2>
+                <div className="mx-auto"><SushiButton content="Créez votre recette gratuitement" className="mx-auto" sushi type="link" theme="black" href="/nouvelle" /></div>
+            </div>
+            <div />
+            <div className="flex justify-center gap-4 text-xl">
+                {[1, 2, 3, 4].map((i) => {
+                    return <button key={i} className={FONT_PRESETS.montserrat_bold}>{i}</button>
+                })}
             </div>
         </div>
     </>
