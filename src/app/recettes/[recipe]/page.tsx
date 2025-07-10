@@ -5,11 +5,12 @@ import StarRating from "@/components/recipe/star-rating";
 import Step from "@/components/recettes/step";
 import SushiButton from "@/components/common/sushi-button";
 import { Fragment } from "react";
+import Commentaire from "@/components/recettes/comment";
 
 async function Recipe({ params }: { params: {recipe: string } }) {
     // await fetch("http://localhost:3636/recipes")
     return (
-        <main>
+        <>
             <section className="p-4">
                 <div className="grid grid-cols-[1fr_1fr_1fr]">
                     <div>
@@ -124,7 +125,7 @@ async function Recipe({ params }: { params: {recipe: string } }) {
                 </div>
             </section>
             <section className="mb-2">
-                <h2 className={`text-4xl mb-2 ${FONT_PRESETS.agbalumo}`}>Étapes</h2>
+                <h2 className={`text-4xl my-2 ${FONT_PRESETS.agbalumo}`}>Étapes</h2>
                 <div className={`flex mb-2 gap-2 ${FONT_PRESETS.montserrat_standard} items-center`}>
                     <svg width={30} height={30} className="fill-orange-1">
                         <use href="/sprite.svg#info-circle" />
@@ -141,11 +142,19 @@ async function Recipe({ params }: { params: {recipe: string } }) {
                     })}
                 </div>
             </section>
-            <section className="flex justify-around">
+            <section className="flex justify-center gap-4 py-2">
                 <SushiButton sushi content="Évaluer la recette" theme="black" type="button" />
                 <SushiButton content="Alternatives" theme="salmon" type="link" href="" />
             </section>
-        </main>
+            <section>
+                <h2 className={`${FONT_PRESETS.agbalumo} my-2 text-5xl`}>Commentaires</h2>
+                <Commentaire content="Truc de taré wallah" user={{
+                    imageUrl: "",
+                    name: "RaspuccinoDu06",
+                    url: "https://google.fr"
+                }} />
+            </section>
+        </>
     )
 };
 

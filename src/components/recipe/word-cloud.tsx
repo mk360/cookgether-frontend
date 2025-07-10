@@ -179,7 +179,7 @@ export const WordCloud: React.FC<WordCloudProps> = ({ words, width = 200, height
   
   return (
     <div className="w-full h-full flex items-center justify-center rounded-lg">
-      <svg width={width} height={height} className="border border-gray-200 rounded-lg bg-white">
+      <svg width={width} height={height} className="border border-gray-200 rounded-lg bg-white border-1 border-primary">
         {processedWords().map((word: ProcessedWord, index: number) => (
           <text
             key={`${word.word}-${index}`}

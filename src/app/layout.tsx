@@ -17,7 +17,7 @@ export default function RootLayout({
     <html style={{ minHeight: "100vh" }} lang="en">
       <body style={{ height: "100%", backgroundImage: "url(/bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className={`px-4 py-4`}>
         <Header />
-        <main className='p-2 border-1 border-primary rounded-lg bg-beige-1'>
+        <main className='p-4 border-1 border-primary rounded-lg bg-beige-1'>
           {children}
         </main>
         <Footer />

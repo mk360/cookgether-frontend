@@ -18,7 +18,7 @@ function Step({ content, canBeParallel, index }: { content: string; canBeParalle
         <span className="text-3xl text-orange-1">{index}.</span>
          <span>{content}</span>
         {canBeParallel && (
-            <svg width={40} height={40} className="stroke-primary fill-transparent">
+            <svg width={40} height={40} className="stroke-orange-1 fill-transparent">
                 <use href="/sprite.svg#info-circle" />
             </svg>
         )}
