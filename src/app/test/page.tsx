@@ -1,5 +1,9 @@
+"use client";
+
+import Filters from "@/components/common/filters";
+
 function Test() {
-    return <p>CECI EST UNE AUTRE PAGE</p>
+    return <p><Filters /></p>
 };
 
 export default Test;
